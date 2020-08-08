@@ -31,6 +31,6 @@ Really happy to accept and review pull requests for new functionality.
 
 ## Checkpoint Issues
 
-While using these scripts, totally sometimes you will get a Facebook Checkpoint if rapidly perform so many actions.
+While using these scripts, sometimes your Facebook account may get Checkpoint due to rapid actions.
 
-I will not responsible for any checkpoint issues.
+I will not take responsibility for that situation, use it at your own risks.
