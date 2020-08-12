@@ -35,7 +35,7 @@ While using these scripts, sometimes your Facebook account may get Checkpoint du
 
 I will not take responsibility for that situation, use it at your own risks.
 
-
+-----
 # Scripts dành cho Facebook
 
 Thư viện này bao gồm các đoạn mã JavaScript để tự động hoá các thao tác trên Facebook mà không cần dùng Access Token.
@@ -50,7 +50,7 @@ Hãy chú ý tìm và đọc các chú thích trong suốt đoạn mã. Bạn c�
 
 Sao chép và dán mã cần thực thi vào mục [DevTools Console](https://developers.google.com/web/tools/chrome-devtools/open).
 
-> **Nhấn chuột phải và chọn Inspect hoặc sử dụng phím tắt Ctrl + Shift + I.**
+> **Nhấn chuột phải, chọn Inspect, chọn tab Console hoặc sử dụng phím tắt Ctrl + Shift + J.**
 
 > **Lưu ý sao chép toàn bộ đoạn mã trong file để đảm bảo không gặp lỗi.**
 
