@@ -34,3 +34,35 @@ Really happy to accept and review pull requests for new functionality.
 While using these scripts, sometimes your Facebook account may get Checkpoint due to rapid actions.
 
 I will not take responsibility for that situation, use it at your own risks.
+
+
+# Sript tự động cho Facebook
+
+Thư viện này bao gồm các đoạn mã javacscript để tự động hoá các thao tác trên Facebook mà không cần dùng Access Token.
+
+## Không cần cài đặt
+
+## Cách dùng
+
+Làm theo hướng dẫn ở đầu mỗi đoạn mã (các dòng chú thích).
+
+Hãy chú ý tìm và đọc các chú thích trong suốt đoạn mã. Bạn có thể thay đổi các thông số cho phù hợp với nhu cầu cá nhân, nhưng chúng tôi không khuyến khích việc này.
+
+Sao chép và dán mã cần thực thi vào mục [DevTools Console](https://developers.google.com/web/tools/chrome-devtools/open).
+
+> **Nhấn chuột phải và chọn Inspect hoặc sử dụng phím tắt Ctrl + Shift + I.**
+
+> **Lưu ý sao chép toàn bộ đoạn mã trong file để đảm bảo không gặp lỗi.**
+
+## Tác giả
+
+- [JayremntB](https://github.com/JayremntB)
+
+Và những [contributors](https://github.com/JayremntB/facebook-scripts-DOM-manipulation/contributors) đã tham gia vào dự án này.
+
+> **Chúng tôi luôn chào đón những đóng góp mới, dù là nhỏ nhất.**
+
+## Gặp Checkpoint?
+
+Như mọi dự án tự động khác, chúng tôi không đảm bảo liệu Facebook có ngăn chặn việc bạn liên tục thực hiện các hành động lặp lại hay không.
+Chúng tôi khuyên bạn không nên lạm dụng mã tự động. Chúng tôi sẽ không nhận bất cứ trách nhiệm nào đối với các sự cố có thể xảy ra.
