@@ -35,10 +35,8 @@ While using these scripts, sometimes your Facebook account may get Checkpoint du
 
 I will not take responsibility for that situation, use it at your own risks.
 
-@SiSu1214
 
-
-# Script tự động cho Facebook
+# Scripts dành cho Facebook
 
 Thư viện này bao gồm các đoạn mã JavaScript để tự động hoá các thao tác trên Facebook mà không cần dùng Access Token.
 
@@ -69,3 +67,5 @@ Và các [contributors](https://github.com/JayremntB/facebook-scripts-DOM-manipu
 Như mọi dự án tự động khác, chúng tôi không đảm bảo liệu Facebook có ngăn chặn việc bạn liên tục thực hiện các hành động lặp lại hay không.
 
 Chúng tôi khuyên bạn không nên lạm dụng mã tự động. Chúng tôi sẽ không nhận bất cứ trách nhiệm nào đối với các sự cố có thể xảy ra.
+
+Bản dịch được thực hiện bởi [SiSu1214](https://github.com/SiSu1214)
