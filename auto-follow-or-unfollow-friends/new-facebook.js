@@ -7,8 +7,11 @@
 
 // You can change the delay time or not (in milliseconds, 1 s = 1000 ms)
 // REMEMBER: the longer the delay time you set, the bigger your chance of not getting Facebook Checkpoint
-let timePerAction = 1000; // Time to Follow/Unfollow a friend, in milliseconds (1000 ms = 1 s)
-let option = 1; // Choose 1 = Unfollow, 2 = Follow
+let option = 2; // Choose 1 = Unfollow, 2 = Follow
+
+// Advanced setting
+let timeWaitMenuShow = 700; // time to wait menu show when click Friends button (which has the Unfollow/Follow button).
+let timeToLoadPage = 3000; // time to load page when scroll to the end of page (Load more friends)
 
 // Don't modify code below
 (() => {
@@ -22,8 +25,8 @@ let option = 1; // Choose 1 = Unfollow, 2 = Follow
     // click Friends button
     setTimeout(function clickNextFriendsButton() {
       if(userIndex + 8 > users.length - 1) {
-        window.scrollTo(0, document.body.scrollHeight); // scroll to page bottom
-        setTimeout(continuousWhenPageLoad, 3000);
+        window.scrollTo(0, document.body.scrollHeight); // scroll to the end of page
+        setTimeout(continuousWhenPageLoad, timeToLoadPage);
         return;
       }
       // click Friends button
@@ -37,9 +40,9 @@ let option = 1; // Choose 1 = Unfollow, 2 = Follow
         if(buttonShowWhenClickFriendsButtonIndex < listButtonsShowWhenClickFriendsButton.length) {
           const buttonName = listButtonsShowWhenClickFriendsButton[buttonShowWhenClickFriendsButtonIndex].textContent.toLowerCase();
           if((option === 1 && (buttonName.includes("unfollow") || buttonName.includes("bỏ theo dõi"))) ||
-						 (option === 2 && (buttonName.includes("follow") || (buttonName.includes("theo dõi") && !buttonName.includes('bỏ'))))) {
+						 (option === 2 && ((buttonName.includes("follow") && !buttonName.includes("unfollow")) || (buttonName.includes("theo dõi") && !buttonName.includes('bỏ'))))) {
             listButtonsShowWhenClickFriendsButton[buttonShowWhenClickFriendsButtonIndex].click();
-            console.log(`${option === 1 ? "unfollow" : "follow"} ${friendName} successfully!`);
+            console.log(`${option === 1 ? "Unfollowed" : "Followed"} ${friendName} successfully!`);
             // click next Friends button
             userIndex ++;
             setTimeout(clickNextFriendsButton, 100);
@@ -50,12 +53,12 @@ let option = 1; // Choose 1 = Unfollow, 2 = Follow
           setTimeout(checkButtonInSubmenu, 0);
         }
         else {
-          console.log(`Already ${option === 1 ? "unfollow" : "follow"} ${friendName}`);
+          console.log(`Already ${option === 1 ? "unfollowed" : "followed"} ${friendName}`);
           // click next Friends button
           userIndex ++;
-          setTimeout(clickNextFriendsButton, 100);
+          setTimeout(clickNextFriendsButton, 0);
         }
-      }, 1000);
+      }, timeWaitMenuShow);
     }, 0);
   }, 0);
 })();
