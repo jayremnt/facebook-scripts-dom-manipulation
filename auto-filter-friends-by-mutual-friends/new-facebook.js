@@ -4,7 +4,7 @@
 * Please copy all the code to make sure that you will not get any errors
 * Before run this script, please switch to NEW Facebook and navigate to this link: https://www.facebook.com/me/friends/
 */
-let mutualFriendsMin = 19; // Friends have less than this number will be removed
+let mutualFriendsMin = 20; // Friends have less than this number will be removed
 let mutualFriendsMax = 5000; // Friends have more than this number will be removed
 let inactiveFriends = true;
 let friendsExcept = ['JayremntB', 'Bảo']; // You can replace or add more friends who you don't want to be affected by the process, each friend's name must be put between with a single quote ('') and a comma (,) before
@@ -28,7 +28,7 @@ let friendsExcept = ['JayremntB', 'Bảo']; // You can replace or add more frien
 			}
 			const friendName = users[userIndex].firstChild.nextSibling.firstChild.textContent;
 			let inExceptFriends = false;
-			exceptFriends.forEach(friend => {
+			friendsExcept.forEach(friend => {
 				if(friend.toLowerCase() === friendName.toLowerCase()) {
 					console.log(`Skip ${friendName} (exception)`);
 					inExceptFriends = true;
@@ -38,7 +38,7 @@ let friendsExcept = ['JayremntB', 'Bảo']; // You can replace or add more frien
 			const mutualFriends = Number(users[userIndex].firstChild.nextSibling.lastChild.textContent.split(' ')[0]);
 			if(!inExceptFriends && (isNaN(mutualFriends) || mutualFriends < mutualFriendsMin || mutualFriends > mutualFriendsMax)) {
 				// click Friends button
-				users[userIndex].lastChild.firstChild.click();
+				users[userIndex].lastChild.firstChild.firstChild.firstChild.click();
 				// click Unfriend button
 				setTimeout(() => {
 					const listButtonsWhenClickFriendsButton = document.getElementsByClassName('oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 oi9244e8 oygrvhab h676nmdw cxgpxx05 dflh9lhu sj5x9vvc scb9dxdr i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l bp9cbjyn dwo3fsh8 btwxx1t3 pfnyh3mw du4w35lb');
