@@ -75,7 +75,7 @@ let totalFriendRequestsSent = 1000; // the number of users you want to send frie
         const userName = listUsers[AddFriendButtonIndex].firstChild.nextSibling.firstChild.textContent;
         // in case not Add Friend Button
         let label = listUsers[AddFriendButtonIndex].lastChild.firstChild.firstChild.firstChild.getAttribute('aria-label');
-        if(!label || (label && (label.toLowerCase() !== 'thêm bạn bè' && label.toLowerCase() !== "add friend"))) {
+        if(!label || (label.toLowerCase() !== 'thêm bạn bè' && label.toLowerCase() !== "add friend")) {
             console.log(`Skip ${userName}`);
             AddFriendButtonIndex ++;
             setTimeout(clickNextAddFriendButton, 0);
