@@ -4,7 +4,7 @@
 * Please copy all the code to make sure that you will not get any errors
 * Before run this script, please switch to NEW Facebook and navigate to this link: https://www.facebook.com/me/friends/
 */
-let mutualFriendsMin = 20; // Friends have less than this number will be removed
+let mutualFriendsMin = 1; // Friends have less than this number will be removed
 let mutualFriendsMax = 5000; // Friends have more than this number will be removed
 let inactiveFriends = true;
 let friendsExcept = ['JayremntB', 'Bảo']; // You can replace or add more friends who you don't want to be affected by the process, each friend's name must be put between with a single quote ('') and a comma (,) before
