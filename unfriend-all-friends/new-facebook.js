@@ -25,7 +25,7 @@ let timePerAction = 2000;
         return;
       }
       // click Friends button
-      users[userIndex].lastChild.firstChild.click();
+      users[userIndex].lastChild.firstChild.firstChild.firstChild.click();
       // click Unfriend button
       setTimeout(() => {
         const listButtonsWhenClickFriendsButton = document.getElementsByClassName('oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 oi9244e8 oygrvhab h676nmdw cxgpxx05 dflh9lhu sj5x9vvc scb9dxdr i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l bp9cbjyn dwo3fsh8 btwxx1t3 pfnyh3mw du4w35lb');
