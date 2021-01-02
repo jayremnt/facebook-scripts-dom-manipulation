@@ -1,2 +1,2 @@
-let comments = document.getElementsByClassName('l9j0dhe7 ecm0bbzt hv4rvrfc qt6c0cv9 dati1w0a lzcic4wl btwxx1t3 j83agx80');
+let comments = document.getElementsByClassName('l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9 dati1w0a j83agx80 btwxx1t3 lzcic4wl');
 comments[Math.floor(Math.random() * comments.length)];
